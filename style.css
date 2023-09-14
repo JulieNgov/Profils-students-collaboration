@@ -1,3 +1,9 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body{
     display: flex;
     justify-content: space-between;
@@ -26,6 +32,7 @@ main{
 
         }
     }
+
     .profil{
 
         border: 3px solid red;
@@ -49,9 +56,10 @@ main{
 
         .info-profil{
             height: 45%;
-            align-items: center;
-            font-size: xx-larges;
-            color: chartreuse;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: rgb(0, 0, 0);
             background-color: aqua;
         }
 
