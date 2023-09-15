@@ -15,14 +15,17 @@ body {
     justify-content: space-between;
 }
 
-.container .fa-solid.fa-bars {
-    display: none;
+.container a:not(.name) {
+    text-decoration: none;
+    color: black;
 }
 
 .navbar {
+    display: block;
     border-right: 2px solid rgb(54, 54, 96);
     background-color: rgb(0, 0, 0);
     padding: 0 30px;
+    transition: all 0.5s ease;
 }
 
 .navbar .fa-solid.fa-xmark {
@@ -42,12 +45,13 @@ body {
     padding: 10px;
 }
 
-.navbar a {
+.navbar a:not(.bars) {
     display: block;
     padding: 10px 50px;
     text-decoration: none;
     text-align: left;
     color: rgb(255, 255, 255);
+    transition: all 0.3s ease;
 }
 
 .navbar a:hover {
@@ -63,19 +67,20 @@ body {
 .next-profile {
     display: flex;
     justify-content: space-between;
+    padding-top: 30px;
 }
 
 .next-profile a {
     text-decoration: none;
     color: rgb(232, 101, 101);
-    padding-right: 50px;
-    padding-left: 10px;
-    padding-bottom: 20px;
+    margin-right: 50px;
+    margin-left: 10px;
+    margin-bottom: 20px;
 }
 
 .next-profile i {
     color: black;
-    padding: 0 15px;
+    margin: 0 15px;
 }
 
 .next-profile a:hover {
@@ -123,7 +128,10 @@ body {
 @media screen and (max-width: 900px) {
 
     .navbar {
+        position: fixed;
         display: none;
+        height: 100vh;
+        padding-top: 20px;
     }
 
     .navbar .fa-solid.fa-xmark {
@@ -134,15 +142,19 @@ body {
         display: block;
     }
 
+    .container a:hover {
+        color: rgb(232, 101, 101);
+    }
+
     .next-profile a {
-        padding-top: 70px;
-        padding-right: 5px;
-        padding-left: 5px;
+        margin: 70px;
+        margin-right: 5px;
+        margin: 5px;
     }
     
     .next-profile i {
         color: black;
-        padding: 0 10px;
+        margin: 0 10px;
     }
 
     .main {
@@ -150,7 +162,12 @@ body {
     }
 
     .container {
-        padding-top: 0;
+        padding-top: 20px;
+   }
+
+   .navbar .bars {
+    text-decoration: none;
+    color: white;
    }
     
 }

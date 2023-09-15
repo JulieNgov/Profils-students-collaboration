@@ -8,8 +8,8 @@
     <script src="https://kit.fontawesome.com/d46d8a5065.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <nav class="navbar">
-        <p><i class="fa-solid fa-xmark"></i></p>
+    <nav class="navbar" id="sidenav">
+        <a class="bars" href="#" onclick="NavMenu()"><i class="fa-solid fa-xmark"></i></a>
         <div class="profile">
             <img src="assets/profile.jpg" alt="photo de profile" class="profile-image">
             <h2>Olivier</h2>
@@ -23,14 +23,18 @@
                 <li><a href="#gouts">Goûts</a></li>
             </ul>
         </div>
+
+        <div class="button">
+            <a href="index.html"><i class="fa-solid fa-house"></i></a>
+        </div>
     </nav>
 
     <div class="container">
-        <p><i class="fa-solid fa-bars"></i></p>
+        <a href="#" onclick="NavMenu()"><i class="fa-solid fa-bars"></i></a>
         <div class="main">
             <div class="next-profile">
-                <a href="julie.html"><i class="fa-solid fa-arrow-left"></i>Julie</i></a>
-                <a href="aurore.html">Aurore<i class="fa-solid fa-arrow-right"></i></a>
+                <a class="name" href="julie.html"><i class="fa-solid fa-arrow-left"></i>Julie</i></a>
+                <a class="name" href="aurore.html">Aurore<i class="fa-solid fa-arrow-right"></i></a>
             </div>
 
             <div class="paragraph" id="presentation">
@@ -60,9 +64,7 @@
         </div>
     </div>
 
-    <div class="button">
-        <a href="index.html"><i class="fa-solid fa-house"></i></a>
-    </div>
+    <script src="olivier.js"></script>
 
 
 </body>
