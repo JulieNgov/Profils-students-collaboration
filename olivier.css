@@ -5,17 +5,32 @@ body {
     justify-content: space-between;
     padding: 0;
     margin: 0;
-    background-color: rgb(201, 202, 231);
+    background-color: rgb(243, 232, 232);
     font-family: 'Poppins', sans-serif;
 }
 
 .container {
+    padding: 20px;
     display: flex;
     justify-content: space-between;
 }
 
+.container .fa-solid.fa-bars {
+    display: none;
+}
+
 .navbar {
     border-right: 2px solid rgb(54, 54, 96);
+    background-color: rgb(0, 0, 0);
+    padding: 0 30px;
+}
+
+.navbar .fa-solid.fa-xmark {
+    display: none;
+}
+
+.navbar p {
+    color: white;
 }
 
 .navbar li {
@@ -29,19 +44,20 @@ body {
 
 .navbar a {
     display: block;
-    padding: 10px 30px;
+    padding: 10px 50px;
     text-decoration: none;
     text-align: left;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 .navbar a:hover {
     background-color: aliceblue;
-    color: rgb(59, 59, 196);
+    color: rgb(232, 101, 101);
 }
 
 .main {
-    padding: 20px;
+    padding: 50px;
+    padding-right: 100px;
 }
 
 .next-profile {
@@ -49,24 +65,32 @@ body {
     justify-content: space-between;
 }
 
-.next-profile:hover {
-    text-decoration: underline;
-}
-
 .next-profile a {
     text-decoration: none;
-    color: rgb(59, 59, 196);
+    color: rgb(232, 101, 101);
+    padding-right: 50px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+}
+
+.next-profile i {
+    color: black;
+    padding: 0 15px;
+}
+
+.next-profile a:hover {
+    text-decoration: underline;
 }
 
 .profile {
     display: block;
-    border-left: 2px solid rgb(54, 54, 96);
     padding: 30px;
 }
 
 .profile h2 {
     display: flex;
     justify-content: center;
+    color: rgb(232, 101, 101);
 }
 
 .profile img {
@@ -79,11 +103,54 @@ body {
     font-size: 20px;
     border-radius: 50%;
     background-color: rgb(224, 235, 244);
-    color: rgb(59, 59, 196);
+    color: black;
     border: 2px solid rgb(255, 255, 255);
     padding: 10px;
     box-shadow: 2px 2px 5px rgb(173, 172, 172);
     position: fixed;
-    left: 20px;
-    bottom: 80px;
+    left: 35px;
+    bottom: 50px;
+}
+
+.button i:hover {
+    color: rgb(232, 101, 101);
+}
+
+.paragraph h2::first-letter {
+    color: rgb(232, 101, 101);
+}
+
+@media screen and (max-width: 900px) {
+
+    .navbar {
+        display: none;
+    }
+
+    .navbar .fa-solid.fa-xmark {
+        display: block;
+    }
+
+    .container .fa-solid.fa-bars {
+        display: block;
+    }
+
+    .next-profile a {
+        padding-top: 70px;
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+    
+    .next-profile i {
+        color: black;
+        padding: 0 10px;
+    }
+
+    .main {
+        padding: 0;
+    }
+
+    .container {
+        padding-top: 0;
+   }
+    
 }
