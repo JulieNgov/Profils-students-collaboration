@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;800&display=swap');
+
 body {
     display: flex;
     justify-content: space-between;
     padding: 0;
     margin: 0;
     background-color: rgb(201, 202, 231);
+    font-family: 'Poppins', sans-serif;
 }
 
 .container {
@@ -12,34 +15,53 @@ body {
 }
 
 .navbar {
-    border-right: 2px solid black;
-    padding: 20px;
-}
-
-.navbar ul {
-    display: contents;
-}
-
-.navbar a {
-    display: flex;
-    justify-content: end;
-    align-items: end;
+    border-right: 2px solid rgb(54, 54, 96);
 }
 
 .navbar li {
-    list-style: none;
-    padding-right: 60px;
+    display: contents;
+    text-decoration: none;
+}
+
+.navbar ul {
+    padding: 10px;
+}
+
+.navbar a {
+    display: block;
+    padding: 10px 30px;
+    text-decoration: none;
+    text-align: left;
+    color: black;
+}
+
+.navbar a:hover {
+    background-color: aliceblue;
+    color: rgb(59, 59, 196);
 }
 
 .main {
     padding: 20px;
 }
 
+.next-profile {
+    display: flex;
+    justify-content: space-between;
+}
+
+.next-profile:hover {
+    text-decoration: underline;
+}
+
+.next-profile a {
+    text-decoration: none;
+    color: rgb(59, 59, 196);
+}
+
 .profile {
     display: block;
-    border: 2px solid black;
-    padding: 20px;
-    margin-right: 20px;
+    border-left: 2px solid rgb(54, 54, 96);
+    padding: 30px;
 }
 
 .profile h2 {
@@ -47,12 +69,21 @@ body {
     justify-content: center;
 }
 
-.button i {
+.profile img {
     border-radius: 50%;
-    border: 2px solid black;
-    background-color: blue;
-    color: beige;
-    position: absolute;
+    width: 150px;
+    height: 150px;
+}
+
+.button i {
+    font-size: 20px;
+    border-radius: 50%;
+    background-color: rgb(224, 235, 244);
+    color: rgb(59, 59, 196);
+    border: 2px solid rgb(255, 255, 255);
+    padding: 10px;
+    box-shadow: 2px 2px 5px rgb(173, 172, 172);
+    position: fixed;
     left: 20px;
-    bottom: 30px;
+    bottom: 80px;
 }
