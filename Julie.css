@@ -1,0 +1,136 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: space-between;
+    background-image: url(assets/cat-bg.jpg);
+    background-attachment: fixed;
+    height: 100%;
+    .barre-navig{
+        width: 18%;
+        background-color: #C8D5B9;
+        border-right: 3px solid #4A7C59;
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: fixed;
+        height: 100%;
+        .sommaire-titre{
+            margin-bottom: 10px;
+        }
+        .sommaire-p{
+            margin-bottom: 5px;
+        }
+    }
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 80%;
+    padding-bottom: 70px;
+
+    .chats-tetes{
+        position: relative;
+        left:31%;
+        margin-top: 50px;
+        font-size: 0;
+    }
+
+    .nom-ppal{
+        font-size: 50px;
+        text-align: center;
+        font-family: 'Satisfy', cursive;
+        margin-bottom: 50px;
+    }
+    .description{
+        position: relative;
+        left:30%;
+        background-color: #FAF3DD;
+        width: 65%;
+        padding: 40px 50px;
+        border: 4px solid #4A7C59;
+        border-radius: 10px;
+        .texte-description{
+            .categories{
+                margin-bottom: 20px;
+                padding-left: 50px;
+            }
+            .desc{
+                margin-bottom: 30px;
+                text-align: justify;
+                line-height: 20px;
+            }
+
+        }
+    }
+
+    .chats-fesses{
+        position: relative;
+        left:31%;
+    }
+
+    .profil{
+
+        border: 3px solid #4A7C59;
+        border-radius: 15px;
+        margin-top: 70px;
+        padding: 10px;
+        background-color: #C8D5B9;
+        width: 15%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        left: 81%;
+        transition: transform .2s;
+
+        .pp{
+            display: block;
+            border-radius: 50%;
+            max-width: 75%;
+            height: auto;
+            margin: auto;
+        }
+
+        .info-profil{
+            height: 40%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            font-family: 'Satisfy', cursive;
+            line-height: 20px;
+            .nom{
+                margin-bottom: 10px;
+            }
+        }
+
+        .ligne{
+            height: 1%;
+            width: 70%;
+            border-bottom: 1px solid #4A7C59;
+            margin-bottom: 12px;
+        }
+
+        .autres-profils{
+            height: 9%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap:65px;
+            margin-bottom: 10px;
+        }
+    }
+
+    .profil:hover{
+        transform: scale(1.2);
+    }
+}
