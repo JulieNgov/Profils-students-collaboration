@@ -45,7 +45,7 @@ body {
     padding: 10px;
 }
 
-.navbar a:not(.bars) {
+.navbar a:not(.bars,.btn) {
     display: block;
     padding: 10px 50px;
     text-decoration: none;
