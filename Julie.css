@@ -52,7 +52,7 @@
         .chats-tetes{
             display: block;
             position: relative;
-            left:31%;
+            left:5%;
             margin-top: 5%;
             max-width: 63%;
         }
@@ -66,7 +66,7 @@
         }
         .description{
             position: relative;
-            left:30%;
+            left:4%;
             background-color: #FAF3DD;
             width: 65%;
             padding: 4% 5%;
@@ -91,7 +91,7 @@
         .chats-fesses{
             display: block;
             position: relative;
-            left:31%;
+            left:5%;
             max-width: 63%;
         }
     
@@ -166,35 +166,95 @@
         background-image: url(Julie-assets/cat-bg.jpg);
         background-attachment: fixed;
         height: 100%;
-        .barre-navig{
-            width: 18%;
+
+        #sommaire{
+            visibility: visible;
+            position: fixed;
+            width: 10%;
+            height: 100%;
+            font-family: 'Playfair Display', serif;
             background-color: #C8D5B9;
             border-right: 3px solid #4A7C59;
-            padding: 2.5%;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            position: fixed;
-            height: 100%;
-            display: none;
-            .sommaire-titre{
-                font-family: 'Playfair Display', serif;
-                margin-bottom: 9%;
-                text-decoration: underline;
-            }
-            .sommaire-p{
-                margin-bottom: 4%;
-                font-family: 'Roboto Condensed', sans-serif;
-                line-height: 180%;
-            }
-    
-            .hanging-cat{
-                display: block;
-                width: 50%;
-                position: absolute;
-                bottom : 10%;
-            }
+            left:0%;
+            z-index: 6;
+        }
 
+        @media screen and (orientation: portrait) {
+
+            .barre-navig{
+                visibility: hidden;
+                z-index: 5;
+                width: 100%;
+                background-color: #C8D5B9;
+                border-right: 3px solid #4A7C59;
+                padding: 5%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                position: fixed;
+                height: 100%;
+                .sommaire-titre{
+                    font-family: 'Playfair Display', serif;
+                    margin-bottom: 10%;
+                    text-decoration: underline;
+                }
+                .sommaire-p{
+                    margin-bottom: 4%;
+                    font-family: 'Roboto Condensed', sans-serif;
+                    line-height: 180%;
+                    font-size: 18px;
+                }
+        
+                .hanging-cat{
+                    display: block;
+                    width: 40%;
+                    position: absolute;
+                    bottom : 3%;
+                }
+
+            }
+        }
+
+        @media screen and (orientation: landscape) {
+
+            .barre-navig{
+                visibility: hidden;
+                z-index: 5;
+                width: 100%;
+                background-color: #C8D5B9;
+                border-right: 3px solid #4A7C59;
+                padding: 5%;
+                position: fixed;
+                height: 100%;
+
+                .sommaire-titre{
+                    font-family: 'Playfair Display', serif;
+                    font-size: 200%;
+                    margin-bottom: 5%;
+                    text-decoration: underline;
+                    position: relative;
+                    left: 23%;
+                }
+                .sommaire-p{
+                    font-family: 'Roboto Condensed', sans-serif;
+                    font-size: 150%;
+                    line-height: 180%;
+                    font-size: 18px;
+                    position:relative;
+                    left: 23%;
+                    bottom:100%;
+                }
+        
+                .hanging-cat{
+                    display: block;
+                    width: 20%;
+                    position: absolute;
+                    bottom : 3%;
+                    right:10%;
+                }
+
+            }
         }
     }
 
@@ -220,6 +280,7 @@
             margin-bottom: 5%;
             text-decoration: underline;
         }
+
         .description{
             position: relative;
             left:17%;
@@ -240,7 +301,6 @@
                     line-height: 165%;
                     font-family: 'Roboto Condensed', sans-serif; 
                 }
-    
             }
         }
     
@@ -255,107 +315,152 @@
             display: block;
             visibility: visible;
             background-image: url(Julie-assets/julie-pp.png);
+            background-size: cover;
             border-radius: 50%;
-            width: 65px;
-            height: 65px;
+            width: 55px;
+            height: 55px;
             position: fixed;
             left:83%;
             top:17%;
         }
 
-        /* .profil{
-            .pp{
-                display: none;
-                display: block;
-                border-radius: 50%;
-                max-width: 15%;
-                height: auto;
-                margin: auto;
+        @media screen and (orientation: portrait){
+
+            .profil{
+
+                visibility: hidden;
+                border: 3px solid #4A7C59;
+                border-radius: 15px;
+                margin-top: 15%;
+                padding: 7%;
+                background-color: #C8D5B9;
+                width: 70%;
+                height: 70%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-items: center;
                 position: fixed;
-                left:83%;
-                top:17%;
-            }
-            .info-profil{
-                display: none;
-            }
-            .ligne{
-                display: none;
-            }
-            .autres-profils{
-                display: none;
-            }
-        } */
+                justify-self: center;
+                align-self: center;
 
-        .profil{
-
-            visibility: hidden;
-            border: 3px solid #4A7C59;
-            border-radius: 15px;
-            margin-top: 15%;
-            padding: 0.7%;
-            background-color: #C8D5B9;
-            width: 70%;
-            height: 80%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            position: fixed;
-            left: 14.5%;
-
-            .pp-profil{
-                height: auto;
-                width: auto;
                 .pp{
                     display: block;
-                    position:static;
                     border-radius: 50%;
                     max-width: 75%;
                     height: auto;
-                    width: auto;
+                    margin: auto;
                 }
-            }
-    
-            .info-profil{
-                height: 40%;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                text-align: center;
-                font-family: 'Satisfy', cursive;
-                line-height: 150%;
-                .nom{
-                    margin-bottom: 15%;
-                    margin-top: 7%;
-                    text-decoration: underline;
-                    font-size: 45px;
-                }
-                .ip-desc{
-                    font-size: 20px;
-                }
-            }
-    
-            .ligne{
-                height: 1%;
-                width: 60%;
-                border-bottom: 1px solid #4A7C59;
-                margin-bottom: 3%;
-            }
-    
-            .autres-profils{
-                height: 9%;
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                grid-gap: 50%;
-                margin-bottom: 5%;
-                font-size: 20px;
-                .grid-items{
+        
+                .info-profil{
+                    height: 40%;
                     display: flex;
-                    align-items: center;
-                    justify-items: center;
+                    flex-direction: column;
+                    justify-content: center;
+                    text-align: center;
+                    font-family: 'Satisfy', cursive;
+                    line-height: 150%;
+
+                    .nom{
+                        margin-bottom: 15%;
+                        margin-top: 15%;
+                        text-decoration: underline;
+                        font-size: 45px;
+                    }
+                    .ip-desc{
+                        font-size: 20px;
+                    }
+                }
+        
+                .ligne{
+                    height: 1%;
+                    width: 60%;
+                    border-bottom: 1px solid #4A7C59;
+                    margin-bottom: 7%;
+                    margin-top: 7%;
+                }
+        
+                .autres-profils{
+                    height: 9%;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr 1fr;
+                    grid-gap: 50%;
+                    /* margin-bottom: 5%; */
+                    font-size: 20px;
+                    /* align-items:  */
+                    /* .grid-items{
+                        display: flex;
+                        align-items: center;
+                        justify-items: center;
+                    }*/
                 }
             }
         }
-    
+
+        @media screen and (orientation: landscape){
+            .profil{
+
+                visibility: hidden;
+                border: 3px solid #4A7C59;
+                border-radius: 15px;
+                padding: 1.5%;
+                background-color: #C8D5B9;
+                width: 50%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-items: center;
+                position: fixed;
+                justify-self: center;
+                align-self: center;
+
+                .pp{
+                    display: block;
+                    border-radius: 50%;
+                    max-width: 50%;
+                    height: auto;
+                    margin: auto;
+                }
+        
+                .info-profil{
+                    height: 40%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    text-align: center;
+                    font-family: 'Satisfy', cursive;
+                    line-height: 150%;
+
+                    .nom{
+                        margin-bottom: 5%;
+                        margin-top: 15%;
+                        text-decoration: underline;
+                        font-size: 30px;
+                    }
+                    .ip-desc{
+                        font-size: 20px;
+                    }
+                }
+        
+                .ligne{
+                    height: 1%;
+                    width: 60%;
+                    border-bottom: 1px solid #4A7C59;
+                    margin-bottom: 5%;
+                    margin-top: 5%;
+                }
+        
+                .autres-profils{
+                    height: 5%;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr 1fr;
+                    grid-gap: 50%;
+                    font-size: 20px;
+                }
+            }
+        }
+
+
     }
 }

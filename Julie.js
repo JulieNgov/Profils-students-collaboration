@@ -10,3 +10,22 @@ function ppProfil() {
         }
     }
 }
+
+function somFonction() {
+    if(mediaQuery.matches){
+        let a = (document.getElementById("sommaire"));
+        let b = (document.getElementsByClassName("barre-navig"))[0];
+        if (window.getComputedStyle(b).visibility === "hidden") {
+        //   a.style.left = "90%";
+          b.style.visibility = "visible";
+          console.log("1");
+        } else {
+        //    a.style.left = "0%";
+           b.style.visibility = "hidden";
+           console.log("2");
+        }
+    }
+    else {
+        console.log("3");
+    }
+}
