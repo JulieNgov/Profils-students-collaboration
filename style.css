@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;800&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    --primary-color: #38598b;
+    --secondary-color: #113f67;
+    --tertiary-color: #e7eaf6;
+    --quaternary-color: #a2a8d3;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--primary-color);
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    justify-content: flex-end;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 20%;
+    background-color: var(--secondary-color);
+    color: var(--tertiary-color);
+    position: fixed;
+    left: 0;
+}
+
+.navbar > h1 {
+    font-size: 2.5rem;
+    margin: 30px 0px 30px 10px;
+    font-weight: 500;
+    color: var(--quaternary-color);
+}
+
+.navbar > ul {
+    list-style: none;
+    margin: 0px 10px 0px 10px;
+    font-weight: 300;
+    font-size: 20px;
+    color: var(--tertiary-color)                      
+}
+
+.navbar > ul > li {
+    margin-bottom: 10px;
+}
+
+.container  {
+    width: 80%;
+    display: flex;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    background-color: var(--secondary-color);
+    margin: 30px 40px;
+    font-weight: 300;
+    width: 70%;
+}
+
+.presentation {
+    height: auto;
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: var(--quaternary-color)
+}
+
+.presentation > h2 {
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.presentation > p {
+    font-size: 25px;
+    color: var(--tertiary-color);
+    margin-right: 10px;
+}
+
+.parcours {
+    height: auto;
+    width: 100%;
+    margin-top: 30px;
+    color: var(--quaternary-color)
+}
+
+.parcours > h2 {
+    text-align: right;
+    font-weight: 500; 
+    font-size: 40px;
+    margin-right: 10px; 
+}
+
+.parcours > p {
+    text-align: right;
+    margin-right: 10px;
+    font-size: 25px;
+    color: var(--tertiary-color)
+}
+
+.passions {
+    height: auto;
+    width: 100%;
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: var(--quaternary-color)
+}
+
+.passions > h2 {
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.passions > p {
+    font-size: 25px;
+    color: var(--tertiary-color);
+    margin-right: 10px;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 46vh;
+    width: 30%;
+    background-color: var(--secondary-color);
+    color: var(--quaternary-color);
+    margin: 30px 30px 0px 0px;
+}
+
+.profile > h2 {
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.profile-image {
+    border-radius: 50%;
+    width: 70%; 
+    height: 70%; 
+    margin-top: 20px;
+    object-fit: cover; 
+}
+
+.button i {
+    font-size: 20px;
+    border-radius: 50%;
+    background-color: rgb(224, 235, 244);
+    color: black;
+    border: 2px solid rgb(255, 255, 255);
+    padding: 10px;
+    box-shadow: 2px 2px 5px rgb(173, 172, 172);
+    position: fixed;
+    left: 35px;
+    bottom: 50px;
+}

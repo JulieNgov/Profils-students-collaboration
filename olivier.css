@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;800&display=swap');
+
+body {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(243, 232, 232);
+    font-family: 'Poppins', sans-serif;
+}
+
+#profil .profil {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+#profil .profil img {
+    width: 200px;
+    height: 150px;
+    border: 3px solid rgb(255, 255, 255);
+    background-color: rgb(234, 234, 234);
+}
+
+#profil .introduction {
+    display: inline-block;
+    padding-bottom: 20px;
+    font-weight: 600;
+    color: rgb(232, 101, 101);
+    font-size: 20px;
+}
+
+.container {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container a:not(.name) {
+    text-decoration: none;
+    color: black;
+}
+
+.navbar {
+    display: block;
+    border-right: 2px solid rgb(54, 54, 96);
+    background-color: rgb(0, 0, 0);
+    padding: 0 30px;
+}
+
+.navbar .fa-solid.fa-xmark {
+    display: none;
+}
+
+.navbar p {
+    color: white;
+}
+
+.navbar li {
+    display: contents;
+    text-decoration: none;
+}
+
+.navbar ul {
+    padding: 10px;
+}
+
+.navbar a:not(.bars,.btn) {
+    display: block;
+    padding: 10px 50px;
+    text-decoration: none;
+    text-align: left;
+    color: rgb(255, 255, 255);
+}
+
+.navbar a:hover {
+    background-color: aliceblue;
+    color: rgb(232, 101, 101);
+}
+
+.main {
+    padding: 50px;
+    padding-right: 100px;
+}
+
+.next-profile {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+.next-profile a {
+    text-decoration: none;
+    color: rgb(232, 101, 101);
+    margin-right: 50px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+.next-profile i {
+    color: black;
+    margin: 0 15px;
+}
+
+.next-profile a:hover {
+    text-decoration: underline;
+}
+
+.profile {
+    display: block;
+    padding: 30px;
+}
+
+.profile h2 {
+    display: flex;
+    justify-content: center;
+    color: rgb(232, 101, 101);
+}
+
+.profile img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.button i {
+    font-size: 20px;
+    border-radius: 50%;
+    background-color: rgb(232, 101, 101);
+    color: black;
+    border: 2px solid rgb(255, 255, 255);
+    padding: 10px;
+    box-shadow: 2px 2px 5px rgb(173, 172, 172);
+    position: fixed;
+    left: 35px;
+    bottom: 50px;
+}
+
+.button i:hover {
+    color: white;
+}
+
+.paragraph h2::first-letter {
+    color: rgb(232, 101, 101);
+}
+
+@media screen and (max-width: 900px) {
+
+    .navbar {
+        position: fixed;
+        display: none;
+        height: 100vh;
+        padding-top: 20px;
+    }
+
+    .navbar .fa-solid.fa-xmark {
+        display: block;
+    }
+
+    .container .fa-solid.fa-bars {
+        display: block;
+    }
+
+    .container a:hover {
+        color: rgb(232, 101, 101);
+    }
+
+    .next-profile a {
+        margin: 70px;
+        margin-right: 5px;
+        margin: 5px;
+    }
+    
+    .next-profile i {
+        color: black;
+        margin: 0 10px;
+    }
+
+    .main {
+        padding: 0;
+    }
+
+    .container {
+        padding-top: 20px;
+   }
+
+   .navbar .bars {
+    text-decoration: none;
+    color: white;
+   }
+    
+}
