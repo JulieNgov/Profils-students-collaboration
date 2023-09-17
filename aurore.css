@@ -165,3 +165,17 @@ body {
 .profile-infos > ul {
     list-style: none;
 }
+
+.switch {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    margin: 10px 0px;
+    
+}
+
+.switch > a {
+    text-decoration: none;
+    color: var(--tertiary-color);
+    font-size: 20px;
+}
