@@ -1,165 +1,199 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;800&display=swap');
-
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    --primary-color: #38598b;
-    --secondary-color: #113f67;
-    --tertiary-color: #e7eaf6;
-    --quaternary-color: #a2a8d3;
 }
 
-body {
-    display: flex;
-    flex-direction: row;
-    background-color: var(--primary-color);
-    font-family: 'Poppins', sans-serif;
-    height: 100vh;
-    width: 100vw;
-    overflow-x: hidden;
-    justify-content: flex-end;
+@media screen and (min-width:1200px) and (orientation:landscape) and (min-height:698px) {
+
+    html, body{
+        height: 100%;
+    }
+    
+    main{
+        height: 100%;
+        padding: 3%;
+        background-color: rgb(255, 245, 233);
+
+        #titre{
+            position: relative;
+            margin-bottom: 3%;
+            text-align: center;
+            text-decoration: underline;
+            font-family: 'Poppins', sans-serif;
+            font-size: x-large;
+        }
+
+        .nom{
+            text-decoration: underline;
+            font-family: 'Mooli', sans-serif;
+            font-size: x-large;
+        }
+
+        .cartes{
+            width: 20%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: transform .2s;
+        }
+
+        .cartes-indiv{
+            border: 3px solid ;
+            border-radius: 15px;
+            padding: 0.7%;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #ligne-1{
+            display: flex;
+            justify-content: space-around;
+            height: 40%;
+            margin-bottom: 3%;
+
+            #carte-olivier{
+                background-color: rgb(243, 232, 232);
+                border-color: rgb(232, 101, 101);
+                display: flex;
+                flex-direction: column;
+                #pp-olivier{
+                    margin-bottom: 10%;
+                    height: 70%;
+                    width: 70%;
+                    border-radius: 50%;
+                }
+            }
+
+            #carte-julie{
+                background-color: #C8D5B9;
+                display: flex;
+                flex-direction: column;
+                border-color: #4A7C59;
+                #pp-julie{
+                    border-radius: 50%;
+                    height: 70%;
+                    width: 70%;
+                    margin-bottom: 10%; 
+                }
+            }
+
+        }
+
+        #ligne-2{
+            display: flex;
+            justify-content: center;
+            height: 40%;
+
+            #carte-aurore{
+                background-color: #a2a8d3;
+                border-color: #113f67;
+                display: flex;
+                flex-direction: column;
+                #pp-aurore{
+                    margin-bottom: 10%;
+                    height: 70%;
+                    width: 70%;
+                    border-radius: 50%;
+                }
+            }
+        }
+
+        .cartes:hover{
+            transform: scale(1.2);
+        }
+
+    }
 }
 
-.navbar {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    width: 20%;
-    background-color: var(--secondary-color);
-    color: var(--tertiary-color);
-    position: fixed;
-    left: 0;
-}
+@media screen and (max-width:1200px), screen and (orientation: portrait), screen and (max-height:698px) {
 
-.navbar > h1 {
-    font-size: 2.5rem;
-    margin: 30px 0px 30px 10px;
-    font-weight: 500;
-    color: var(--quaternary-color);
-}
+    #all{
 
-.navbar > ul {
-    list-style: none;
-    margin: 0px 10px 0px 10px;
-    font-weight: 300;
-    font-size: 20px;
-    color: var(--tertiary-color)                      
-}
+        background-color: rgb(255, 245, 233);
+        padding-top: 35%;
 
-.navbar > ul > li {
-    margin-bottom: 10px;
-}
+        #titre{
+            position: fixed;
+            background-color: rgb(249, 214, 170);
+            top: 0%;
+            text-align: center;
+            text-decoration: underline;
+            font-family: 'Poppins', sans-serif;
+            padding: 5%;
+            border-bottom: 3px solid rgb(135, 99, 52);
+            z-index: 2;
+            width: 100%;
+        }
 
-.container  {
-    width: 80%;
-    display: flex;
-}
+        #corps{
+            display: flex;
+            flex-wrap:wrap;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-left:auto;
+            width: 80%;
+            position: relative;
+        }
 
-.main {
-    display: flex;
-    flex-direction: column;
-    height: fit-content;
-    background-color: var(--secondary-color);
-    margin: 30px 40px;
-    font-weight: 300;
-    width: 70%;
-}
+        .nom{
+            text-decoration: underline;
+            font-family: 'Mooli', sans-serif;
+            font-size: x-large;
+        }
 
-.presentation {
-    height: auto;
-    width: 100%;
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-    color: var(--quaternary-color)
-}
+        .cartes-indiv{
+            border: 3px solid;
+            border-radius: 15px;
+            padding: 5%;
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 10%;
+        }
+    
+        #carte-olivier{
+            background-color: rgb(243, 232, 232);
+            border-color: rgb(232, 101, 101);
+            #pp-olivier{
+                border-radius: 50%;
+                height: 70%;
+                width: 70%;
+                margin-bottom: 10%; 
+            }
+        }
+    
+        #carte-julie{
+            background-color: #C8D5B9;
+            border-color: #4A7C59;
+            #pp-julie{
+                border-radius: 50%;
+                height: 70%;
+                width: 70%;
+                margin-bottom: 10%; 
+            }
+        }
 
-.presentation > h2 {
-    font-weight: 500;
-    font-size: 40px;
-}
+        #carte-aurore{
+            background-color: #a2a8d3;
+            border-color: #113f67;
+            #pp-aurore{
+                border-radius: 50%;
+                height: 70%;
+                width: 70%;
+                margin-bottom: 10%;
+            }
+        }
 
-.presentation > p {
-    font-size: 25px;
-    color: var(--tertiary-color);
-    margin-right: 10px;
-}
+    }
 
-.parcours {
-    height: auto;
-    width: 100%;
-    margin-top: 30px;
-    color: var(--quaternary-color)
-}
-
-.parcours > h2 {
-    text-align: right;
-    font-weight: 500; 
-    font-size: 40px;
-    margin-right: 10px; 
-}
-
-.parcours > p {
-    text-align: right;
-    margin-right: 10px;
-    font-size: 25px;
-    color: var(--tertiary-color)
-}
-
-.passions {
-    height: auto;
-    width: 100%;
-    margin-top: 30px;
-    margin-left: 10px;
-    margin-right: 10px;
-    color: var(--quaternary-color)
-}
-
-.passions > h2 {
-    font-weight: 500;
-    font-size: 40px;
-}
-
-.passions > p {
-    font-size: 25px;
-    color: var(--tertiary-color);
-    margin-right: 10px;
-}
-
-.profile {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 46vh;
-    width: 30%;
-    background-color: var(--secondary-color);
-    color: var(--quaternary-color);
-    margin: 30px 30px 0px 0px;
-}
-
-.profile > h2 {
-    font-weight: 500;
-    font-size: 40px;
-}
-
-.profile-image {
-    border-radius: 50%;
-    width: 70%; 
-    height: 70%; 
-    margin-top: 20px;
-    object-fit: cover; 
-}
-
-.button i {
-    font-size: 20px;
-    border-radius: 50%;
-    background-color: rgb(224, 235, 244);
-    color: black;
-    border: 2px solid rgb(255, 255, 255);
-    padding: 10px;
-    box-shadow: 2px 2px 5px rgb(173, 172, 172);
-    position: fixed;
-    left: 35px;
-    bottom: 50px;
 }
