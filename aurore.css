@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;800&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    --primary-color: #38598b;
+    --secondary-color: #113f67;
+    --tertiary-color: #e7eaf6;
+    --quaternary-color: #a2a8d3;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--primary-color);
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    justify-content: flex-end;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 16%;
+    background-color: var(--secondary-color);
+    color: var(--tertiary-color);
+    position: fixed;
+    left: 0;
+}
+
+.navbar > h1 {
+    font-size: 2.5rem;
+    margin: 30px 0px 30px 10px;
+    font-weight: 500;
+    color: var(--quaternary-color);
+}
+
+.navbar > ul {
+    list-style: none;
+    margin: 0px 10px 0px 10px;
+    font-weight: 300;
+    font-size: 20px;
+    color: var(--tertiary-color)                      
+}
+
+.navbar > ul > li {
+    margin-bottom: 10px;
+}
+
+.navbar > ul > li > a {
+    text-decoration: none;
+    color: var(--tertiary-color);
+    transition: 0.5s;
+}
+
+.navbar > ul > li > a:hover {
+    color: #9b9ca1;
+}
+
+.container  {
+    width: 84%;
+    display: flex;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    background-color: var(--secondary-color);
+    margin: 30px 40px;
+    font-weight: 300;
+    width: 74%;
+    padding-bottom: 20px;
+}
+
+#description {
+    margin-top: 10px;
+}
+
+.div-left {
+    height: auto;
+    width: 100%;
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: var(--quaternary-color)
+}
+
+.div-left > h2 {
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.div-left > p {
+    font-size: 25px;
+    color: #9b9ca0;
+    margin-right: 10px;
+}
+
+.div-right {
+    height: auto;
+    width: 100%;
+    margin-top: 50px;
+    color: var(--quaternary-color)
+}
+
+.div-right > h2 {
+    text-align: right;
+    font-weight: 500; 
+    font-size: 40px;
+    margin-right: 10px; 
+}
+
+.div-right > p {
+    text-align: right;
+    margin-right: 10px;
+    font-size: 25px;
+    color: #9b9ca0;
+}
+
+.div-left:hover, .div-right:hover, .div-left > p:hover, .div-right > p:hover {
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    width: 30%;
+    background-color: var(--secondary-color);
+    margin: 30px 30px 0px 0px;
+}
+
+.profile-image {
+    border-radius: 50%;
+    width: 70%; 
+    height: 70%; 
+    margin-top: 20px;
+    object-fit: cover; 
+}
+
+.profile-infos {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    color: var(--tertiary-color);
+    width: 100%;
+    height: fit-content;
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.profile-infos > h2 {
+    color: var(--quaternary-color);
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.profile-infos > ul {
+    list-style: none;
+}
+
+.switch {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    margin: 10px 0px;
+    
+}
+
+.switch > a {
+    text-decoration: none;
+    color: var(--tertiary-color);
+    font-size: 20px;
+}
