@@ -64,83 +64,62 @@ body {
     margin: 30px 40px;
     font-weight: 300;
     width: 70%;
+    padding-bottom: 20px;
 }
 
-.presentation {
+#first-div {
+    margin-top: 10px;
+}
+
+.div-left {
     height: auto;
     width: 100%;
-    margin-top: 10px;
+    margin-top: 40px;
     margin-left: 10px;
     margin-right: 10px;
     color: var(--quaternary-color)
 }
 
-.presentation > h2 {
+.div-left > h2 {
     font-weight: 500;
     font-size: 40px;
 }
 
-.presentation > p {
-    font-size: 20px;
+.div-left > p {
+    font-size: 25px;
     color: var(--tertiary-color);
     margin-right: 10px;
 }
 
-.parcours {
+.div-right {
     height: auto;
     width: 100%;
-    margin-top: 30px;
+    margin-top: 40px;
     color: var(--quaternary-color)
 }
 
-.parcours > h2 {
+.div-right > h2 {
     text-align: right;
     font-weight: 500; 
     font-size: 40px;
     margin-right: 10px; 
 }
 
-.parcours > p {
+.div-right > p {
     text-align: right;
     margin-right: 10px;
-    font-size: 20px;
+    font-size: 25px;
     color: var(--tertiary-color)
-}
-
-.passions {
-    height: auto;
-    width: 100%;
-    margin-top: 30px;
-    margin-left: 10px;
-    margin-right: 10px;
-    color: var(--quaternary-color)
-}
-
-.passions > h2 {
-    font-weight: 500;
-    font-size: 40px;
-}
-
-.passions > p {
-    font-size: 20px;
-    color: var(--tertiary-color);
-    margin-right: 10px;
 }
 
 .profile {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 46vh;
+    height: fit-content;
     width: 30%;
     background-color: var(--secondary-color);
-    color: var(--quaternary-color);
     margin: 30px 30px 0px 0px;
-}
-
-.profile > h2 {
-    font-weight: 500;
-    font-size: 40px;
 }
 
 .profile-image {
@@ -149,4 +128,25 @@ body {
     height: 70%; 
     margin-top: 20px;
     object-fit: cover; 
+}
+
+.profile-infos {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    color: var(--tertiary-color);
+    width: 100%;
+    height: fit-content;
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.profile-infos > h2 {
+    color: var(--quaternary-color);
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.profile-infos > ul {
+    list-style: none;
 }
