@@ -25,7 +25,7 @@ body {
     display: flex;
     flex-direction: column;
     height: 100%;
-    width: 20%;
+    width: 16%;
     background-color: var(--secondary-color);
     color: var(--tertiary-color);
     position: fixed;
@@ -62,7 +62,7 @@ body {
 }
 
 .container  {
-    width: 80%;
+    width: 84%;
     display: flex;
 }
 
@@ -73,7 +73,7 @@ body {
     background-color: var(--secondary-color);
     margin: 30px 40px;
     font-weight: 300;
-    width: 70%;
+    width: 74%;
     padding-bottom: 20px;
 }
 
@@ -97,7 +97,7 @@ body {
 
 .div-left > p {
     font-size: 25px;
-    color: var(--tertiary-color);
+    color: #9b9ca0;
     margin-right: 10px;
 }
 
@@ -119,7 +119,12 @@ body {
     text-align: right;
     margin-right: 10px;
     font-size: 25px;
-    color: var(--tertiary-color)
+    color: #9b9ca0;
+}
+
+.div-left:hover, .div-right:hover, .div-left > p:hover, .div-right > p:hover {
+    color: white;
+    transition: color 0.3s ease;
 }
 
 .profile {
